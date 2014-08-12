@@ -1,0 +1,295 @@
+* {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: green;
+	background-image: url(../images/bg_background.jpg);
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	display: inline-block;
+	list-style-type: none;
+	list-style: none;
+}
+span {
+	display: inline-block;
+}
+h1,
+h2,
+h3,
+h4 {
+	margin:0;
+	margin-top: 20px;
+}
+
+/*Main wrapper*/
+.wrapper {
+	width: 95%;
+	margin: 0 auto;
+	padding: 80px 10px;
+	background-color: rgba(2,2,2,0.4);
+	z-index: -99;
+	overflow: hidden;
+}
+
+h1.athelas-team-title {
+	color:#fff;
+	text-align: center;
+	margin: 60px 0;
+	text-indent: -9999999px;
+
+}
+
+h1.athelas-team-title:after {
+	content: " ";
+	display: block;
+	position: absolute;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 190px;
+	width: 350px;
+	background-image: url(../images/header_logo.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	top: 3px;
+	left: 490px;
+} 
+
+/*Character sheet's wrapper*/
+.athelas-team {
+	width: 100%;
+	min-height: 600px;
+
+}
+
+/*User card*/
+.athelas-team-ul {
+	margin: 0 auto;
+	padding: 0;
+	width: 90%;
+}
+.user {
+	width: 30%;
+	min-height: 600px;
+	margin: 1% 1%;
+	background-color: rgb(252,252,252);
+	position: relative;
+	z-index: 0;
+}
+
+.user#sujumayas:before {
+	content: " ";
+	display: block;
+	position: absolute;
+	top: -9px;
+	right: 4px;
+	height: 174px;
+	width: 72px;
+	background-image: url(../images/sujumayas.png); 
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+.user#sujumayas:after {
+	content: "";
+	width: 54px;
+	height: 18px;
+	display: block;
+	position: absolute;
+	background-color: rgba(4,4,4,0.3);
+	top: 135px;
+	right: 8px;
+	border-radius: 100%;
+}
+
+
+.user#ondoheer:before {
+	content: " ";
+	display: block;
+	position: absolute;
+	top: -9px;
+	right: 4px;
+	height: 174px;
+	width: 72px;
+	background-image: url(../images/ondoheer.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.user#ondoheer:after {
+	content: "";
+	width: 54px;
+	height: 18px;
+	display: block;
+	position: absolute;
+	background-color: rgba(4,4,4,0.3);
+	top: 149px;
+	right: 20px;
+	border-radius: 100%;
+}
+
+/*Basic stats*/
+.basic-stats {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	min-height: 50px;
+}
+.basic-stats-item{
+	width: 80%;
+	display: block;
+	border: none;
+	margin: 10px 40px 10px 10px;
+	background-color: transparent;
+}
+
+.basic-stats-item.basic-stats-level {
+	width: 60%;
+	margin-left: 35px;
+	margin-top: 10px;
+}
+
+
+.basic-stats-item.basic-stats-level:before {
+	content: "8";
+	display: block;
+	position: absolute;
+	background: black;
+	border-radius: 100%;
+	height: 20px;
+	width: 20px;
+	top: 134px;
+	left: 31px;
+	line-height: 20px;
+	text-align: center;
+	color: white;
+}
+
+.basic-stats-item.basic-stats-level:after {
+	content: "9";
+	display: block;
+	position: absolute;
+	background: rgba(1,1,1,0.4);
+	border-radius: 100%;
+	height: 20px;
+	width: 20px;
+	top: 134px;
+	right: 102px;
+	line-height: 20px;
+	text-align: center;
+	color: white;
+}
+
+.label {
+	width: 50%;
+}
+.value {
+	width: 50%;
+}
+
+/*Language Skills*/
+.language-skills{
+	width: 50%;
+	float: left;
+	min-height: 200px;
+	overflow: hidden;
+}
+.language{
+	width: 100%;
+	margin: 0;
+	padding: 5px;
+}
+
+.language>span.label{
+	width: 78%;
+	color: #5bc0de;
+	background-color: rgba(4,4,5,0.7);
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+	margin: 0;
+	padding: 5px 5px;
+	display: inline-block;
+	height: 25px;
+	line-height: 15px;
+}
+
+.language>span.value{
+	width: 20%;
+}
+
+.lang-level {
+	font-weight: 400;
+	width: 25px;
+	color: rgba(4,4,5,0.7);
+	height: 25px;
+	border-radius: 100%;
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+	border-left: 0;
+	line-height: 25px;
+	background: #5bc0de;
+	text-align: center;
+}
+
+.language .progress {
+	width: 80%;
+}
+
+/*Special traits*/
+.special-traits {
+	float: left;
+	width: 50%;
+	min-height: 280px;
+	background-color: transparent;
+}
+
+.language-expert {}
+.language-expert-title {}
+.language-expert-value {}
+
+.being-coding-for {}
+.being-coding-for-title {}
+.being-coding-for-value {}
+
+.weapons {
+	float: left;
+	width: 60%;
+	min-height: 80px;
+	background-color:transparent;
+}
+.weapons-ul {
+	padding: 15px;
+}
+.weapons-item {}
+
+
+
+
+
+/* Images */
+.image1 {
+	width: 53px;
+	position: absolute;
+	height: 87px;
+	top: 0px;
+	right: 6px;
+	background-image: url(../images/content_greenribbon.png);
+	display: none;
+}
+.image2 {
+	float: left;
+	width: 40%;
+	min-height: 80px;
+	background-image: url(../images/athelas.ico);
+	background-repeat: no-repeat;
+}
+
+
